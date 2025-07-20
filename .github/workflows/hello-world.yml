@@ -1,13 +1,13 @@
 name: Hello-world
 
-on:push
+on: push
 
 jobs:
-hello-world-job:
+ hello-world-job:
 
- runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
 
 steps:
   - name: check out respository code
-  uses: actions/checkout@v4
- -run: echo "$(cat hello_world.txt)"
+    uses: actions/checkout@v4
+  - run: echo "$(cat hello_world.txt)"
